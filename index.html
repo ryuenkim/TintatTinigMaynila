@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quality News</title>
+    <title>Tinta't Tinig Maynila: Ink, Stories, and Voices of Manila</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo logo-btn" data-view="home">Home</div>
+            <div class="header-logo">
+                <span>Tinta't Tinig Maynila</span>
+            </div>
             <nav class="nav-menu">
+                <button class="tab-btn" data-view="home">Home</button>
                 <button class="tab-btn" data-view="reports">News Reports</button>
                 <button class="tab-btn" data-view="features">Features</button>
                 <button class="tab-btn" data-view="editorial">Editorial</button>
+                <button class="tab-btn" data-view="about">About</button>
             </nav>
         </div>
     </header>
@@ -32,34 +36,85 @@
                 </video>
                 <div class="hero-overlay" aria-hidden="true"></div>
                 <div class="hero-content">
-                    <h1>Quality News</h1>
+                    <h1>Tinta't Tinig Maynila: Ink, Stories, and Voices of Manila</h1>
+                </div>
+            </section>
+
+            <!-- Featured Articles Section -->
+            <section class="articles-section" style="background-color: #FFFFFF;">
+                <div class="container-full">
+                    <h2 class="page-title" style="text-align: center; margin-bottom: 50px;">Featured Articles</h2>
+                    
+                    <div style="margin-bottom: 60px;">
+                        <div class="articles-grid" style="grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                            <article class="article-card" onclick="showView('article-detail-view-6'); return false;" style="cursor: pointer;">
+                                <div class="article-media">
+                                    <img src="img/shiro.jpg" alt="Fuel Crisis Pushes Colleges Online">
+                                </div>
+                                <div class="article-body">
+                                    <span class="article-meta" style="color: #FFFFFF;">Report</span>
+                                    <h4 style="color: #FFFFFF;">Fuel Crisis Pushes Colleges Online</h4>
+                                    <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Eircelle Mier B. Carreras</strong></p>
+                                    <a class="read-more" href="#" onclick="showView('article-detail-view-6'); return false;" style="color: #FFFFFF;">Read more</a>
+                                </div>
+                            </article>
+
+                            <article class="article-card" onclick="showView('article-detail-view-5'); return false;" style="cursor: pointer;">
+                                <div class="article-media">
+                                    <img src="img/jo.jpg" alt="A Space to Just Be">
+                                </div>
+                                <div class="article-body">
+                                    <span class="article-meta" style="color: #FFFFFF;">Feature</span>
+                                    <h4 style="color: #FFFFFF;">A Space to Just Be: The Unspoken Comfort of the Tambayan</h4>
+                                    <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Jonnalyn R. Subido</strong></p>
+                                    <a class="read-more" href="#" onclick="showView('article-detail-view-5'); return false;" style="color: #FFFFFF;">Read more</a>
+                                </div>
+                            </article>
+
+                            <article class="article-card" onclick="showView('article-detail-view'); return false;" style="cursor: pointer;">
+                                <div class="article-media">
+                                    <img src="img/annika.jpg" alt="How online classes affect students">
+                                </div>
+                                <div class="article-body">
+                                    <span class="article-meta" style="color: #FFFFFF;">Editorial • Opinion</span>
+                                    <h4 style="color: #FFFFFF;">How online classes affect students even if it is perceived as convenient</h4>
+                                    <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Annika E. Garcia</strong></p>
+                                    <a class="read-more" href="#" onclick="showView('article-detail-view'); return false;" style="color: #FFFFFF;">Read more</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-
-        <!-- News Reports View -->
         <div class="view" id="reports-view">
             <section class="articles-section">
                 <div class="container-full">
                     <h2 class="page-title">News Reports</h2>
                     <div class="articles-grid reports-grid">
-                        <article class="article-card">
-                            <div class="article-media placeholder"></div>
+                        <article class="article-card" onclick="showView('article-detail-view-6'); return false;" style="cursor: pointer;">
+                            <div class="article-media">
+                                <img src="img/shiro.jpg" alt="Fuel Crisis Pushes Colleges Online">
+                            </div>
                             <div class="article-body">
-                                <span class="article-meta">Report</span>
-                                <h4>Report Title 1</h4>
-                                <p class="excerpt">Placeholder summary for news report one.</p>
-                                <a class="read-more" href="#">Read more</a>
+                                <span class="article-meta" style="color: #FFFFFF;">Report</span>
+                                <h4 style="color: #FFFFFF;">Fuel Crisis Pushes Colleges Online</h4>
+                                <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Eircelle Mier B. Carreras</strong></p>
+                                <p class="excerpt" style="color: #FFFFFF;">The Commission on Higher Education (CHED) allowed colleges and universities nationwide to shift from Face to Face or Hybrid to 100% online learning as the Philippines tackle its share of issues with the global fuel and energy crisis.</p>
+                                <a class="read-more" href="#" onclick="showView('article-detail-view-6'); return false;" style="color: #FFFFFF;">Read more</a>
                             </div>
                         </article>
 
-                        <article class="article-card">
-                            <div class="article-media placeholder"></div>
+                        <article class="article-card" onclick="showView('article-detail-view-7'); return false;" style="cursor: pointer;">
+                            <div class="article-media">
+                                <img src="img/ace.jpg" alt="House votes to seal VP Sara Duterte's tax records">
+                            </div>
                             <div class="article-body">
-                                <span class="article-meta">Report</span>
-                                <h4>Report Title 2</h4>
-                                <p class="excerpt">Placeholder summary for news report two.</p>
-                                <a class="read-more" href="#">Read more</a>
+                                <span class="article-meta" style="color: #FFFFFF;">Report</span>
+                                <h4 style="color: #FFFFFF;">House votes to seal VP Sara Duterte's tax records</h4>
+                                <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Ace Anthony C. Valenzuela</strong></p>
+                                <p class="excerpt" style="color: #FFFFFF;">On April 29 2026, the House Committee on Justice voted to maintain the confidentiality of the Bureau of Internal Revenue (BIR) tax records of Vice President Sara Duterte and her husband during an impeachment trial inquiry.</p>
+                                <a class="read-more" href="#" onclick="showView('article-detail-view-7'); return false;" style="color: #FFFFFF;">Read more</a>
                             </div>
                         </article>
                     </div>
@@ -73,33 +128,40 @@
                 <div class="container-full">
                     <h2 class="page-title">Features</h2>
                     <div class="articles-grid features-grid">
-                        <article class="article-card">
-                            <div class="article-media placeholder"></div>
+                        <article class="article-card" onclick="showView('article-detail-view-3'); return false;" style="cursor: pointer;">
+                            <div class="article-media">
+                                <img src="img/identity.jpg" alt="Before I Knew, It Knew: How Algorithms Shape Identity">
+                            </div>
                             <div class="article-body">
-                                <span class="article-meta">Feature</span>
-                                <h4>Feature Title 1</h4>
-                                <p class="excerpt">Short placeholder for feature one.</p>
-                                <a class="read-more" href="#">Read more</a>
+                                <span class="article-meta" style="color: #FFFFFF;">Feature</span>
+                                <h4 style="color: #FFFFFF;">Before I Knew, It Knew: How Algorithms Shape Identity</h4>
+                                <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Janayah Ysabel C. Santos</strong></p>
+                                <p class="excerpt" style="color: #FFFFFF;">I used to think my personality was something I discovered on my own. A favorite song felt personal. A fashion trend felt chosen. Then one night, while scrolling endlessly at 2 a.m., I realized something unsettling, the algorithm already knew who I was becoming before I did.</p>
+                                <a class="read-more" href="#" onclick="showView('article-detail-view-3'); return false;" style="color: #FFFFFF;">Read more</a>
                             </div>
                         </article>
 
-                        <article class="article-card">
+                        <article class="article-card" onclick="showView('article-detail-view-4'); return false;" style="cursor: pointer;">
                             <div class="article-media placeholder"></div>
                             <div class="article-body">
-                                <span class="article-meta">Feature</span>
-                                <h4>Feature Title 2</h4>
-                                <p class="excerpt">Short placeholder for feature two.</p>
-                                <a class="read-more" href="#">Read more</a>
+                                <span class="article-meta" style="color: #FFFFFF;">Feature</span>
+                                <h4 style="color: #FFFFFF;">Gregoria Lakambini: A Sensational Musical that Highlights and Empowers Women</h4>
+                                <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Karl Josef Santos</strong></p>
+                                <p class="excerpt" style="color: #FFFFFF;">'Gregoria Lakambini: A Pinay Pop Musical' is Tanghalang Pilipino's latest offering featuring a seven-piece, all-women ensemble that tackles the inspiring story of the nation's "Mother of the Katipunan."</p>
+                                <a class="read-more" href="#" onclick="showView('article-detail-view-4'); return false;" style="color: #FFFFFF;">Read more</a>
                             </div>
                         </article>
 
-                        <article class="article-card">
-                            <div class="article-media placeholder"></div>
+                        <article class="article-card" onclick="showView('article-detail-view-5'); return false;" style="cursor: pointer;">
+                            <div class="article-media">
+                                <img src="img/jo.jpg" alt="A Space to Just Be: The Unspoken Comfort of the Tambayan">
+                            </div>
                             <div class="article-body">
-                                <span class="article-meta">Feature</span>
-                                <h4>Feature Title 3</h4>
-                                <p class="excerpt">Short placeholder for feature three.</p>
-                                <a class="read-more" href="#">Read more</a>
+                                <span class="article-meta" style="color: #FFFFFF;">Feature</span>
+                                <h4 style="color: #FFFFFF;">A Space to Just Be: The Unspoken Comfort of the Tambayan</h4>
+                                <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Jonnalyn R. Subido</strong></p>
+                                <p class="excerpt" style="color: #FFFFFF;">Across many Filipino communities, tambayans have long served as informal gathering spaces where people meet out of habit, comfort, and the need to connect.</p>
+                                <a class="read-more" href="#" onclick="showView('article-detail-view-5'); return false;" style="color: #FFFFFF;">Read more</a>
                             </div>
                         </article>
                     </div>
@@ -113,25 +175,287 @@
                 <div class="container-full">
                     <h2 class="page-title">Editorial</h2>
                     <div class="articles-grid editorial-grid">
-                        <article class="article-card">
-                            <div class="article-media placeholder"></div>
+                        <article class="article-card" onclick="showView('article-detail-view'); return false;" style="cursor: pointer;">
+                            <div class="article-media">
+                                <img src="img/annika.jpg" alt="How online classes affect students even if it is perceived as convenient">
+                            </div>
                             <div class="article-body">
-                                <span class="article-meta">Editorial • Opinion</span>
-                                <h4>Editorial Title 1</h4>
-                                <p class="excerpt">Placeholder summary for editorial article one. This space will hold a concise intro to the piece.</p>
-                                <a class="read-more" href="#">Read more</a>
+                                <span class="article-meta" style="color: #FFFFFF;">Editorial • Opinion</span>
+                                <h4 style="color: #FFFFFF;">How online classes affect students even if it is perceived as convenient</h4>
+                                <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Annika E. Garcia</strong></p>
+                                <p class="excerpt" style="color: #FFFFFF;">The decision of the Commission on Higher Education to allow schools to shift to 100% online classes shows how serious the fuel crisis is today. It aims to help students and professors deal with rising transportation costs, but it also brings back old problems from online learning, problems we've already dealt with before.</p>
+                                <a class="read-more" href="#" onclick="showView('article-detail-view'); return false;" style="color: #FFFFFF;">Read more</a>
                             </div>
                         </article>
 
-                        <article class="article-card">
-                            <div class="article-media placeholder"></div>
+                        <article class="article-card" onclick="showView('article-detail-view-2'); return false;" style="cursor: pointer;">
+                            <div class="article-media">
+                                <img src="img/kat.jpg" alt="When the Wheels Can't Turn: Life Behind the Jeepney Wheel">
+                            </div>
                             <div class="article-body">
-                                <span class="article-meta">Editorial • Opinion</span>
-                                <h4>Editorial Title 2</h4>
-                                <p class="excerpt">Placeholder summary for editorial article two. Replace with the article excerpt when ready.</p>
-                                <a class="read-more" href="#">Read more</a>
+                                <span class="article-meta" style="color: #FFFFFF;">Editorial • Opinion</span>
+                                <h4 style="color: #FFFFFF;">When the Wheels Can't Turn: Life Behind the Jeepney Wheel</h4>
+                                <p style="font-size: 14px; color: #FFFFFF; margin-bottom: 12px;"><strong>By Katrina Therese V. Gorayeb</strong></p>
+                                <p class="excerpt" style="color: #FFFFFF;">For many Filipinos, the COVID-19 pandemic was the hardest economic survival. However, today, jeepney drivers are greatly affected by the Middle East conflict, causing a price increase in diesel, goods, and services. The global conflicts led the jeepney drivers to struggle, even calling it worse than the pandemic.</p>
+                                <a class="read-more" href="#" onclick="showView('article-detail-view-2'); return false;" style="color: #FFFFFF;">Read more</a>
                             </div>
                         </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Detail View 2 -->
+        <div class="view" id="article-detail-view-2">
+            <section class="articles-section article-detail-section">
+                <div class="container-full">
+                    <button class="back-btn" onclick="showView('editorial-view'); return false;" style="margin-bottom: 30px; padding: 10px 20px; background-color: var(--gold-light); color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">← Back to Editorial</button>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <h1 style="font-size: 36px; margin-bottom: 20px; color: var(--dark); line-height: 1.4;">When the Wheels Can't Turn: Life Behind the Jeepney Wheel</h1>
+                        
+                        <p style="font-size: 16px; color: var(--dark); margin-bottom: 30px;"><strong>By Katrina Therese V. Gorayeb</strong></p>
+                        
+                        <img src="img/kat.jpg" alt="Jeepney drivers" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 30px; border-radius: 4px;">
+                        
+                        <div style="font-size: 16px; line-height: 1.8; color: var(--dark);">
+                            <p style="margin-bottom: 20px;">For many Filipinos, the COVID-19 pandemic was the hardest economic survival. However, today, jeepney drivers are greatly affected by the Middle East conflict, causing a price increase in diesel, goods, and services. The global conflicts led the jeepney drivers to struggle, even calling it worse than the pandemic. Their struggles have deeply affected many citizens, both online and in real life, as drivers continue to plead for help and urgent action to ease their burden.</p>
+
+                            <p style="margin-bottom: 20px;">According to a GMA News report, many drivers face a painful dilemma between continuing to drive for 12 to 14 hours only to earn ₱250 to ₱300 a day, or stop working and lose income completely. According to the jeepney drivers, diesel expenses consume nearly everything they earn, leaving only enough to feed their families for a day and have no savings at all.</p>
+
+                            <p style="margin-bottom: 20px;">When the people who keep the country moving can no longer afford to move themselves, everyone suffers. Jeepney drivers should not choose between hunger and hard labor. Without fair fuel policies, subsidies, and fare adjustments, livelihoods suffer—leaving concerned citizens to offer what help they can.</p>
+
+                            <p style="margin-bottom: 20px;">Jeepney drivers serve an important role in Filipinos' everyday life, especially for commuters. They help students, workers, and citizens get to where they need to be. Despite this, they remain among the most financially vulnerable workers in our country. Although the government has already offered assistance, many jeepney drivers say it remains limited and does not fully address their long-term needs and concerns.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Detail View 3 -->
+        <div class="view" id="article-detail-view-3">
+            <section class="articles-section article-detail-section">
+                <div class="container-full">
+                    <button class="back-btn" onclick="showView('features-view'); return false;" style="margin-bottom: 30px; padding: 10px 20px; background-color: var(--gold-light); color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">← Back to Features</button>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <h1 style="font-size: 36px; margin-bottom: 20px; color: var(--dark); line-height: 1.4;">Before I Knew, It Knew: How Algorithms Shape Identity</h1>
+                        
+                        <p style="font-size: 16px; color: var(--dark); margin-bottom: 30px;"><strong>By Janayah Ysabel C. Santos</strong></p>
+                        
+                        <img src="img/digital.jpg" alt="Algorithms and Identity" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 30px; border-radius: 4px;">
+                        
+                        <div style="font-size: 16px; line-height: 1.8; color: var(--dark);">
+                            <h2 style="font-size: 24px; margin-bottom: 15px; color: var(--gold-light);">Before I Knew, It Knew</h2>
+                            
+                            <p style="margin-bottom: 20px;">I used to think my personality was something I discovered on my own. A favorite song felt personal. A fashion trend felt chosen. Even the memes I laughed at felt like proof that I was becoming someone unique. Then one night, while scrolling endlessly at 2 a.m., I realized something unsettling, the algorithm already knew who I was becoming before I did.</p>
+
+                            <p style="margin-bottom: 20px;">It noticed every pause, every replay, every late-night search I thought no one saw. Slowly, my feed became a mirror that reflected not only my interests, but also my insecurities, desires, and fears. One video about productivity turned into an obsession with hustling. One sad playlist became weeks of romanticizing loneliness. The algorithm did not force me to change. It simply learned how to guide me quietly, almost gently, toward versions of myself I did not question anymore.</p>
+
+                            <p style="margin-bottom: 20px;">The strangest part is how comforting it feels. In a world where people misunderstand each other constantly, the algorithm feels attentive. It knows what makes us stay, what makes us angry, what makes us dream. But somewhere between convenience and connection, identity becomes curated instead of discovered.</p>
+
+                            <p style="margin-bottom: 20px;">Maybe that is the real danger, not that technology watches us, but that eventually, we begin watching ourselves through its eyes. Some days I wonder how much of me is untouched by recommendation pages and curated timelines. Maybe growing up means carrying fingerprints left by machines, shaping our tastes so subtly that we mistake prediction for personality itself.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Detail View 4 -->
+        <div class="view" id="article-detail-view-4">
+            <section class="articles-section article-detail-section">
+                <div class="container-full">
+                    <button class="back-btn" onclick="showView('features-view'); return false;" style="margin-bottom: 30px; padding: 10px 20px; background-color: var(--gold-light); color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">← Back to Features</button>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <h1 style="font-size: 36px; margin-bottom: 20px; color: var(--dark); line-height: 1.4;">Gregoria Lakambini: A Sensational Musical that Highlights and Empowers Women from the Past, to the Present</h1>
+                        
+                        <p style="font-size: 16px; color: var(--dark); margin-bottom: 30px;"><strong>By Karl Josef Santos</strong></p>
+                        
+                        <div style="font-size: 16px; line-height: 1.8; color: var(--dark);">
+                            <h2 style="font-size: 24px; margin-bottom: 15px; color: var(--gold-light);">Sa Kwentong Bayan, BABAE NAMAN!</h2>
+                            
+                            <p style="margin-bottom: 20px;">'Gregoria Lakambini: A Pinay Pop Musical' is Tanghalang Pilipino's latest and freshest offering from their 39th season line-up, 'TP39: IGNITE.' The musical features a seven-piece, all-women ensemble that tackles the inspiring and heartwarming story of the nation's "Mother of the Katipunan," Gregoria "Oryang" De Jesús. Having its initial run at the CCP Tanghalang Ignacio Gimenez from November to December of last year; Tanghalang Pilipino had reprised the musical for a special, one-weekend staging at the Hyundai Hall, Areté, Quezon City.</p>
+
+                            <p style="margin-bottom: 20px;">As an usher at the CCP, I was able to catch a glimpse of the show from time-to-time, and during those small glimpses, I was mesmerized and captivated by the bold-yet-charming premise of the story. So, I made a pact with myself that if there's a re-run, I would be seated.</p>
+
+                            <h3 style="font-size: 18px; margin: 20px 0 15px 0; color: var(--gold-light);">This is HERstory.</h3>
+
+                            <p style="margin-bottom: 20px;">I finally saw the musical last April 12, this time as an audience member. Despite being seated at the balcony, It felt like I was seated in the front seat with how the ensemble was able to bring an eclectic energy even to the farthest seats, especially during the songs: "Saya't Alampay" and "Bon Appétit, Heneral;" which made the whole theater into ablaze with laughter when the ensemble did Budots. Though the musical doesn't only showcase a humorous side, the ensemble were also able to pull our heartstrings and put us into tears.</p>
+
+                            <p style="margin-bottom: 20px;">Overall, 'Gregoria Lakambini' has become my favorite musical ever, and limiting my experience and admiration into 250-words serves injustice to the production. With Tanghalang Pilipino teasing its 40th season, it seems like the musical will be having its month-long re-run again—which I hope that many people can also watch and witness HERstory.</p>
+
+                            <p style="margin-bottom: 20px;">"Hindi pa tapos ang aking kwento."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Detail View 5 -->
+        <div class="view" id="article-detail-view-5">
+            <section class="articles-section article-detail-section">
+                <div class="container-full">
+                    <button class="back-btn" onclick="showView('features-view'); return false;" style="margin-bottom: 30px; padding: 10px 20px; background-color: var(--gold-light); color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">← Back to Features</button>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <h1 style="font-size: 36px; margin-bottom: 20px; color: var(--dark); line-height: 1.4;">A Space to Just Be: The Unspoken Comfort of the Tambayan</h1>
+                        
+                        <p style="font-size: 16px; color: var(--dark); margin-bottom: 30px;"><strong>By Jonnalyn R. Subido</strong></p>
+                        
+                        <img src="img/jo.jpg" alt="Tambayan" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 30px; border-radius: 4px;">
+                        
+                        <div style="font-size: 16px; line-height: 1.8; color: var(--dark);">
+                            <p style="margin-bottom: 20px;">I still remember how it usually began, without anyone deciding it was time. As the sun dipped low and cast a soft orange glow, familiar spots around the neighborhood slowly filled, a bench by a sari-sari store, a quiet corner, the steps outside a school, and sometimes a rooftop.</p>
+
+                            <p style="margin-bottom: 20px;">No invitations. People just came.</p>
+
+                            <p style="margin-bottom: 20px;">That's the thing about tambayans. They don't announce themselves. They simply happen. Across many Filipino communities, these informal gathering spaces have long served as places where people meet, not out of obligation, but out of habit, comfort, and the need to connect.</p>
+
+                            <p style="margin-bottom: 20px;">For us, it was always that rooftop. Climbing up, the noise of the street softened into something lighter. One person would already be there, then another, until the space quietly became ours.</p>
+
+                            <p style="margin-bottom: 20px;">Like many college students, we were trying to keep up with everything, assignments, deadlines, expectations we were still learning to carry. Life moved fast. But in spaces like this, it slowed down. Conversations didn't need structure. A passing comment could turn into laughter, then into shared stories, then into quiet honesty.</p>
+
+                            <p style="margin-bottom: 20px;">Tambayans may look unproductive from the outside, just people sitting around talking, but they often become spaces of release. Here, people check in on each other without formality. Silence isn't awkward. Presence is enough.</p>
+
+                            <p style="margin-bottom: 20px;">Now, as schedules grow tighter and paths begin to separate, these gatherings take different forms, group chats, late-night calls, quick meetups when time allows. Still, the essence remains.</p>
+
+                            <p style="margin-bottom: 20px;">Because a tambayan is never just a place. It's a pause in the middle of everything, a space where, even briefly, life doesn't need to be solved, only shared.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Detail View 6 -->
+        <div class="view" id="article-detail-view-6">
+            <section class="articles-section article-detail-section">
+                <div class="container-full">
+                    <button class="back-btn" onclick="showView('reports-view'); return false;" style="margin-bottom: 30px; padding: 10px 20px; background-color: var(--gold-light); color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">← Back to News Reports</button>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <h1 style="font-size: 36px; margin-bottom: 20px; color: var(--dark); line-height: 1.4;">Fuel Crisis Pushes Colleges Online</h1>
+                        
+                        <p style="font-size: 16px; color: var(--dark); margin-bottom: 30px;"><strong>By Eircelle Mier B. Carreras</strong></p>
+                        
+                        <img src="img/shiro.jpg" alt="Fuel Crisis and Online Classes" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 30px; border-radius: 4px;">
+                        
+                        <div style="font-size: 16px; line-height: 1.8; color: var(--dark);">
+                            <p style="margin-bottom: 20px;">MANILA, Philippines — The Commission on Higher Education (CHED) allowed colleges and universities nationwide to shift from Face to Face or Hybrid to 100% online learning as the Philippines tackle its share of issues with the global fuel and energy crisis, confirmed by officials.</p>
+
+                            <p style="margin-bottom: 20px;">CHED Chairperson Shirley Agrupis announced that the policy grants colleges "full flexibility" to determine whether they can fully transition back to online classes depending on their tech and faculty capabilities. (1)</p>
+
+                            <p style="margin-bottom: 20px;">The move comes as a temporary measure to address rising transportation and energy costs that has brought major struggles to students throughout the country. "We are giving full flexibility… depending on their perceived readiness to offer the pure online," Agrupis said. (1)</p>
+
+                            <p style="margin-bottom: 20px;">Previously, CHED regulations limited online learning to hybrid modalities, still making a significant portion of classes face-to-face. The new directive eases these requirements and allows institutions to adopt fully online learning during the issue being faced. (1)</p>
+
+                            <p style="margin-bottom: 20px;">The policy is due to the government wide efforts following the declaration of a national energy emergency by President Ferdinand Marcos Jr..(2)</p>
+
+                            <p style="margin-bottom: 20px;">Stakeholders have expressed mixed reactions. Some lawmakers such as Senator Pia Cayetano, warn that prolonged online learning could affect the educational outcomes of students. (3)</p>
+
+                            <p style="margin-bottom: 20px;">CHED states that while institutions are free to adopt 100% online modalities during the crisis, they must ensure that academic standards are not affected by it. (1)</p>
+
+                            <p style="margin-bottom: 20px;">Further adjustments are likely, depending on the stability of the country's fuel reserves and status of the economy.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Detail View 7 -->
+        <div class="view" id="article-detail-view-7">
+            <section class="articles-section article-detail-section">
+                <div class="container-full">
+                    <button class="back-btn" onclick="showView('reports-view'); return false;" style="margin-bottom: 30px; padding: 10px 20px; background-color: var(--gold-light); color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">← Back to News Reports</button>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <h1 style="font-size: 36px; margin-bottom: 20px; color: var(--dark); line-height: 1.4;">House votes to seal VP Sara Duterte's tax records</h1>
+                        
+                        <p style="font-size: 16px; color: var(--dark); margin-bottom: 30px;"><strong>By Ace Anthony C. Valenzuela</strong></p>
+                        
+                        <img src="img/ace.jpg" alt="House Committee" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 30px; border-radius: 4px;">
+                        
+                        <div style="font-size: 16px; line-height: 1.8; color: var(--dark);">
+                            <p style="margin-bottom: 20px;">On April 29 2026, the House Committee on Justice voted to maintain the confidentiality of the Bureau of Internal Revenue (BIR) tax records of Vice President Sara Duterte and her husband, Manases Carpio, during an impeachment trial inquiry against them for having suspicious transaction records. (1)</p>
+
+                            <p style="margin-bottom: 20px;">Following an Anti-Money Laundering Council (AMLC) report flagging ₱6.77 billion in suspicious transactions from 2006 to 2025, lawmakers are examining whether Duterte's and Carpio's declared assets match their financial disclosures, including their Statement of Assets, Liabilities, and Net Worths (SALNs), income tax returns (ITRs), and other corporate and banking records. (1)</p>
+
+                            <p style="margin-bottom: 20px;">However, during the April 29 hearing, the committee voted 38-6 to keep the couples tax records sealed, following BIR guidance that tax documents requested by the congress should only be examined in an executive session or during an impeachment trial. (2)</p>
+
+                            <p style="margin-bottom: 20px;">Some lawmakers,  Leila de Lima and Lorenz Defensor, believe that a constitutional power exists for the committee, while others such as Joel Chua and  Chel Diokno, want the committee to establish probable cause first, and thus would not permit the committee to access the subpoenaed tax records at this time. (2)</p>
+
+                            <p style="margin-bottom: 20px;">As of May 7 2026, the Quezon City Regional Trial Court dismissed a petition filed by Carpio seeking to block the House committee from obtaining tax and financial records. (3)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About View -->
+        <div class="view" id="about-view">
+            <section class="articles-section">
+                <div class="container-full">
+                    <h2 class="page-title">About This Site</h2>
+                    <div style="max-width: 900px; margin: 40px auto;">
+                        <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px; color: var(--dark);"><strong>Tinta't Tinig Maynila: Ink, Stories, and Voices of Manila</strong></p>
+                        <p style="font-size: 15px; line-height: 1.8; margin-bottom: 30px; color: var(--dark);">A publication that serves as both ink and voice for the stories of Manila, through its printed pages and the spoken word of its articles. That establishes a platform for multiple voices to express themselves through its combination of journalism and literature and artistic works which together create a communal storytelling experience that reflects the city's identity and its inhabitants.</p>
+                        
+                        <h3 style="font-size: 20px; margin-top: 30px; margin-bottom: 20px; color: var(--gold-light);">Institution</h3>
+                        <div style="background-color: #f5f5f5; padding: 20px; border-left: 4px solid var(--gold-light); margin-bottom: 30px;">
+                            <p style="margin-bottom: 12px; font-size: 15px;"><span style="color: var(--gold-light); font-weight: bold;">UNIVERSITY:</span> PAMANTASAN NG LUNGSOD NG MAYNILA</p>
+                            <p style="margin-bottom: 12px; font-size: 15px;"><span style="color: var(--gold-light); font-weight: bold;">COLLEGE:</span> College of Humanities, Arts and Social Sciences (CHASS)</p>
+                            <p style="margin-bottom: 0; font-size: 15px;"><span style="color: var(--gold-light); font-weight: bold;">DEPARTMENT:</span> Department of Mass Communication (DMC)</p>
+                        </div>
+
+                        <h3 style="font-size: 20px; margin-top: 30px; margin-bottom: 20px; color: var(--gold-light);">Course Information</h3>
+                        <div style="background-color: #f5f5f5; padding: 20px; border-left: 4px solid var(--gold-light); margin-bottom: 30px;">
+                            <p style="margin-bottom: 12px; font-size: 15px;"><span style="color: var(--gold-light); font-weight: bold;">COURSE:</span> BAC 2201 - Journalism Principles and Practices</p>
+                            <p style="margin-bottom: 12px; font-size: 15px;"><span style="color: var(--gold-light); font-weight: bold;">CLASS:</span> BAC 2 - 1, Group No. 1</p>
+                            <p style="margin-bottom: 12px; font-size: 15px;"><span style="color: var(--gold-light); font-weight: bold;">FACULTY-IN-CHARGE:</span> MR. GEORGE C. ARCENO</p>
+                            <p style="margin-bottom: 0; font-size: 15px;"><span style="color: var(--gold-light); font-weight: bold;">YEAR:</span> 2026</p>
+                        </div>
+
+                        <h3 style="font-size: 20px; margin-top: 30px; margin-bottom: 20px; color: var(--gold-light);">Submitted by</h3>
+                        <div style="background-color: #f5f5f5; padding: 20px; border-left: 4px solid var(--gold-light);">
+                            <p style="margin-bottom: 8px; font-size: 15px;">Carreras, Eircelle Mier B.</p>
+                            <p style="margin-bottom: 8px; font-size: 15px;">Garcia, Annika E.</p>
+                            <p style="margin-bottom: 8px; font-size: 15px;">Gorayeb, Katrina Therese V.</p>
+                            <p style="margin-bottom: 8px; font-size: 15px;">Mabborang, Francesca Shanel L.</p>
+                            <p style="margin-bottom: 8px; font-size: 15px;">Polinag, Ma. Elvira Ashtine</p>
+                            <p style="margin-bottom: 8px; font-size: 15px;">Santos, Janayah Ysabel C.</p>
+                            <p style="margin-bottom: 8px; font-size: 15px;">Santos, Karl Josef A.</p>
+                            <p style="margin-bottom: 8px; font-size: 15px;">Subido, Jonnalyn R.</p>
+                            <p style="margin-bottom: 0; font-size: 15px;">Valenzuela, Ace Anthony C.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Detail View -->
+        <div class="view" id="article-detail-view">
+            <section class="articles-section article-detail-section">
+                <div class="container-full">
+                    <button class="back-btn" onclick="showView('editorial-view'); return false;" style="margin-bottom: 30px; padding: 10px 20px; background-color: var(--gold-light); color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">← Back to Editorial</button>
+                    
+                    <div style="max-width: 900px; margin: 0 auto;">
+                        <h1 style="font-size: 36px; margin-bottom: 20px; color: var(--dark); line-height: 1.4;">How online classes affect students even if it is perceived as convenient</h1>
+                        
+                        <p style="font-size: 16px; color: var(--dark); margin-bottom: 30px;"><strong>By Annika E. Garcia</strong></p>
+                        
+                        <img src="img/annika.jpg" alt="Students in online class" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 30px; border-radius: 4px;">
+                        
+                        <div style="font-size: 16px; line-height: 1.8; color: var(--dark);">
+                            <p style="margin-bottom: 20px;">The decision of the Commission on Higher Education to allow schools to shift to 100% online classes shows how serious the fuel crisis is today. It aims to help students and professors deal with rising transportation costs, but it also brings back old problems from online learning, problems we've already dealt with before.</p>
+
+                            <p style="margin-bottom: 20px;">Now that schools can temporarily shift fully online during the fuel shortage. While this offers flexibility and helps commuters save money, especially for those with homes ten kilometers away, it's not all sunshine and rainbows, more like solar flares and pure unfiltered heat.</p>
+
+                            <p style="margin-bottom: 20px;">The shift driven by factors like extreme weather, rising fares, and global conflicts affect oil prices that even everyday goods feel it. Online learning starts to look appealing, but many students still struggle with poor internet, expensive data, lack of devices, and unsuitable study spaces. For underprivileged students, this setup can be especially unfair.</p>
+
+                            <p style="margin-bottom: 20px;">While helpful in the short term, it exposes gaps in digital education. Courses like medicine, engineering, and art fields require hands-on training, labs, and real interaction, things you can't exactly download at home. Not to mention, on-the-job training becomes nearly impossible. The same issues from the pandemic are still here, making it feel like we're just caught in the crossfire.</p>
+
+                            <p style="margin-bottom: 20px;">Overall, online classes may be practical for now, but they shouldn't be the only solution. Schools and the government must ensure fair support for all, because education should remain accessible, balanced, and real, not just convenient.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -143,17 +467,8 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h4>About This Site</h4>
-                <p>Quality News is a premium news platform delivering breaking news, in-depth features, and professional editorial analysis.</p>
-            </div>
-
-            <div class="footer-section">
-                <h4>Student Credits</h4>
-                <div class="student-info">
-                    <p><strong>Name:</strong> <span class="editable">Student Name</span></p>
-                    <p><strong>Section:</strong> <span class="editable">Section/Class</span></p>
-                    <p><strong>Year:</strong> <span class="editable">2026</span></p>
-                </div>
+                <h4>About</h4>
+                <p style="font-size: 14px; line-height: 1.7; color: #000000; margin-bottom: 0;">Tinta't Tinig Maynila: Ink, Stories, and Voices of Manila serves as both ink and voice for the stories of Manila, through its printed pages and the spoken word of its articles.</p>
             </div>
 
             <div class="footer-section">
@@ -183,17 +498,27 @@
                     <li><a href="#" onclick="showView('editorial-view'); return false;">Editorial</a></li>
                 </ul>
             </div>
+
+            <div class="footer-section">
+                <h4>Latest Articles</h4>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="showView('article-detail-view'); return false;">How online classes affect students</a></li>
+                    <li><a href="#" onclick="showView('article-detail-view-2'); return false;">When the Wheels Can't Turn</a></li>
+                    <li><a href="#" onclick="showView('article-detail-view-3'); return false;">Before I Knew, It Knew</a></li>
+                    <li><a href="#" onclick="showView('article-detail-view-5'); return false;">A Space to Just Be</a></li>
+                    <li><a href="#" onclick="showView('article-detail-view-6'); return false;">Fuel Crisis Pushes Colleges Online</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Quality News. All rights reserved.</p>
+            <p>&copy; 2026 Tinta't Tinig Maynila. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
         // View Navigation Functionality
         const tabBtns = document.querySelectorAll('.tab-btn');
-        const logoBtn = document.querySelector('.logo-btn');
         const views = document.querySelectorAll('.view');
 
         // Helper function to show a view
@@ -234,12 +559,6 @@
                 const viewName = btn.getAttribute('data-view');
                 showView(`${viewName}-view`);
             });
-        });
-
-        // Logo click to go home
-        logoBtn.addEventListener('click', () => {
-            showView('home-view');
-            tabBtns.forEach(btn => btn.classList.remove('active'));
         });
     </script>
 </body>
